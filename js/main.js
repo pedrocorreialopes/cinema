@@ -1,63 +1,19 @@
 // Lista de vídeos do YouTube (IDs extraídos das URLs)
 const channels = [
-    { id: 'xUarb_lxPUc', name: 'O que vamos aprender no curso?' },
-    { id: 'J7ABOxu1sdw', name: 'Por que é tão importante aprender IA?' },
-    { id: 'QAMF8irwPxM', name: 'Tire suas dúvidas do curso com a gente' },
-    { id: 'Sho2hvTQxKE', name: 'Como uma IA funciona?' },
-    { id: 'WrJBJsb5IDc', name: 'Rode modelos de IA direto no seu PC' },
-    { id: 'p33lQqS1PnY', name: 'O que é Inteligência Artificial?' },
-    { id: 'cUOM5qi5lyQ', name: 'A novidade Claude AI' },
-    { id: 'WsQyhzHXRlY', name: 'Aplicações de Inteligências Artificiais' },
-    { id: 'YY3MmQltQbk', name: 'Desafios das Inteligências Artificiais' },
-    { id: 'BzbxjkNseVU', name: 'Inteligência Artificial hoje e no futuro' },
-    { id: '0mtXae5HhTE', name: 'Você sabe o que é Machine Learning?' },
-    { id: '-RuI3BIAXno', name: 'Crie e edite imagens com IA' },
-    { id: 'M8hoXE24PMo', name: 'Você sabe o que é Deep Learning?' },
-    { id: 'dqTZCknuctk', name: 'LLM: A tecnologia por trás da IA textual' },
-    { id: 'K25zMnhs3Ms', name: 'Crie seu assistente virtual com Hugging Chat' },
-    { id: 'nilwEge6jDA', name: 'Simulando Conversas Humanas' },
-    { id: 'FTZuA31dbwk', name: 'PLN: Respondendo à Linguagem Humana' },
-    { id: 'JfJJIrOhWwQ', name: 'Tokens: A Base da Linguagem para a IA' },
-    { id: 'jqQFA6k-Acs', name: 'Uma IA que te ajuda e cita fontes: Perplexity' },
-    { id: '0rXf90pnL44', name: 'Prompts: O Pilar da Interação em IA' },
-    { id: 'x6BCRy85HLA', name: 'Batalha de IAs: Gemini versus ChatGPT' },
-    { id: 'RtoyMsSn9t4', name: 'Duelo de Tecnologias: Chatbots versus Buscadores' },
-    { id: 'Ft6oGcG3_7g', name: 'Uma IA que Organiza Suas Ideias: Napkin' },
-    { id: '31HFCW5DuqI', name: 'IAs Generativas: Matemática, Metáforas e Mitos' },
-    { id: 'ATp4Q4UD-c8', name: 'Design de Prompt: Introdução a Engenharia de Prompt ' },
-    { id: '_3lq1Mg4lYw', name: 'Aplicando a Engenharia de Prompt na Prática' },
-    { id: 'AOFSTpOBMl8', name: 'Otimize seus estudos e pesquisas com o poder do Notebook LM' },
-    { id: 'Hj39xHVvoj0', name: 'Prompts de Atuação: Atribuindo Papéis para IAs' },
-    { id: '9OtsFrjYQMU', name: 'Aprimorando E-mails com IA: Prompts de Atuação - Parte 2' },
-    { id: '42R_AM9LZ_o', name: 'Interações com modelos de Inteligência Artificial' },
-    { id: 'ro9Sb9p-DY8', name: 'Integração de técnicas para amplificar resultados!' },
-    { id: 'AGS3qzat0is', name: 'Formalizando Prompts' },
-    { id: 'ctlWV3OAZlo', name: 'Aprenda a conversar com robôs!' },
-    { id: 'M1yx08ef8SU', name: 'Domine a arte dos prompts poderosos para IA! (Parte 1)' },
-    { id: '6Ipu6YB0VQo', name: 'Domine a arte dos prompts poderosos para IA! (Parte 2)' },
-    { id: 'cehFjA0qL4g', name: 'Descubra o poder da I.A na criação de imagens!' },
-    { id: 'IWzw87I6TqE', name: 'Desvendando falhas dos LLMs: Verifique suas fontes!' },
-    { id: 'jsr_ObQ291o', name: 'Vieses em IA: Desvendando Preconceitos na I.A!' },
-    { id: 'vTtjfRMNwCc', name: 'Revelando as Mentiras das IAs!' },
-    { id: 'v1zYwUWScr4', name: 'Entenda as Armadilhas Matemáticas em Modelos de IA' },
-    { id: 'sHuWzF8Mwms', name: 'A Verdade por Trás do Prompt Hacking na IA' },
-    { id: 'JRzBxd5rbqc', name: 'Facilite Tarefas com IA: Automação e Organização de Dados' },
-    { id: 'cPDabmtNBS8', name: 'Descubra como a IA Facilita sua Rotina de E-mails' },
-    { id: 'rO45Chc3jNI', name: 'IA para Networking: Crie E-mails de Prospecção' },
-    { id: '1dA2wxyR4pE', name: 'Faça Suas Abordagens Iniciais se Destacarem com IA' },
-    { id: 'cYVK8p09zOo', name: 'Escreva Posts de Blog de Alto Nível com Agilidade' },
-    { id: 'gm0BI1Gn7xs', name: 'Como a IA Pode Transformar Seus Estudos' },
-    { id: 'l1yy3Jd_kaI', name: 'Como se Manter Atualizado com Inteligência Artificial' },
-    { id: '35vdWc1MDRo', name: 'Como se Manter Atualizado com Inteligência Artificial (Parte 2)' },
-    { id: '2Eam3XeRxHk', name: 'Como a IA Ajuda na Criação e Revisão de Códigos' },
-    { id: '1V3WUDuzLmY', name: 'Depuração e Otimização de Código com Inteligência Artificial' },
-    { id: '5S6h8t_pQLI', name: 'Converta Códigos e Domine Expressões Regulares' },
-    { id: 'YGa4elddiug', name: 'Planejamento e Gestão de Projetos com IA' },
-    { id: 'Im-wWhTAruI', name: 'Transforme seus Projetos em Negócios Reais com IA' },
-    { id: 'P21na7vR6E0', name: 'Guia Prático de Marketing Digital Utilizando IA' },
-    { id: 'rFomZew2BDw', name: 'Melhore suas Estratégias de SEO e Anúncios com IA' },
-    { id: 'jFY1vPcPVoc', name: 'Descubra Aplicações Incríveis de IA em Diversas Áreas' },
-    { id: 'OIlszrJfkhQ', name: 'Encerramento Módulo 01: Certificado e Próximos Passos' }
+    { id: 'xUarb_lxPUc', name: 'O que vamos aprender no curso?', level: 'basico', duration: '8:30' },
+    { id: 'J7ABOxu1sdw', name: 'Por que é tão importante aprender IA?', level: 'basico', duration: '9:15' },
+    { id: 'QAMF8irwPxM', name: 'Tire suas dúvidas do curso com a gente', level: 'basico', duration: '7:45' },
+    { id: 'Sho2hvTQxKE', name: 'Como uma IA funciona?', level: 'intermediario', duration: '12:20' },
+    { id: 'WrJBJsb5IDc', name: 'Rode modelos de IA direto no seu PC', level: 'intermediario', duration: '11:10' },
+    { id: 'p33lQqS1PnY', name: 'O que é Inteligência Artificial?', level: 'basico', duration: '10:30' },
+    { id: 'cUOM5qi5lyQ', name: 'A novidade Claude AI', level: 'intermediario', duration: '13:45' },
+    { id: 'WsQyhzHXRlY', name: 'Aplicações de Inteligências Artificiais', level: 'intermediario', duration: '14:20' },
+    { id: 'YY3MmQltQbk', name: 'Desafios das Inteligências Artificiais', level: 'avancado', duration: '15:10' },
+    { id: 'BzbxjkNseVU', name: 'Inteligência Artificial hoje e no futuro', level: 'avancado', duration: '16:30' },
+    { id: '0mtXae5HhTE', name: 'Você sabe o que é Machine Learning?', level: 'intermediario', duration: '13:15' },
+    { id: '-RuI3BIAXno', name: 'Crie e edite imagens com IA', level: 'intermediario', duration: '12:45' },
+    { id: 'M8hoXE24PMo', name: 'Você sabe o que é Deep Learning?', level: 'avancado', duration: '17:20' },
+    { id: 'dqTZCknuctk', name: 'LLM: A tecnologia por trás da IA textual', level: 'avancado', duration: '18:10' }
 ];
 
 // Estado atual
@@ -65,19 +21,14 @@ let currentChannel = 0;
 let currentVolume = 100;
 let isMuted = false;
 let isPlaying = true;
+let currentFilter = 'all';
 
 // Elementos DOM
 const iframe = document.getElementById('youtubePlayer');
-const channelNumberDisplay = document.getElementById('channelNumber');
-const channelListContainer = document.getElementById('channelListContainer');
-
-// Botões de controle
-const channelUpBtn = document.getElementById('channelUp');
-const channelDownBtn = document.getElementById('channelDown');
-const volumeUpBtn = document.getElementById('volumeUp');
-const volumeDownBtn = document.getElementById('volumeDown');
+const currentVideoDisplay = document.getElementById('currentVideo');
+const totalVideosDisplay = document.getElementById('totalVideos');
+const videoListContainer = document.getElementById('videoListContainer');
 const playPauseBtn = document.getElementById('playPause');
-const stopBtn = document.getElementById('stop');
 const muteBtn = document.getElementById('mute');
 
 // Variável para player do YouTube API
@@ -111,63 +62,90 @@ function onYouTubeIframeAPIReady() {
 
 // Quando o player está pronto
 function onPlayerReady(event) {
-    updateChannelDisplay();
-    createChannelList();
+    updateVideoDisplay();
+    createVideoList();
     player.setVolume(currentVolume);
+    
+    // Adicionar eventos dos botões
+    setupEventListeners();
 }
 
 // Quando o estado do player muda
 function onPlayerStateChange(event) {
     if (event.data === YT.PlayerState.PLAYING) {
         isPlaying = true;
+        updatePlayPauseButton();
     } else if (event.data === YT.PlayerState.PAUSED) {
         isPlaying = false;
+        updatePlayPauseButton();
     }
 }
 
-// Atualizar display do canal
-function updateChannelDisplay() {
-    const channelNum = (currentChannel + 1).toString().padStart(2, '0');
-    channelNumberDisplay.textContent = channelNum;
+// Atualizar display do vídeo
+function updateVideoDisplay() {
+    const videoNum = (currentChannel + 1).toString().padStart(2, '0');
+    currentVideoDisplay.textContent = videoNum;
+    totalVideosDisplay.textContent = channels.length.toString().padStart(2, '0');
     
-    // Atualizar lista de canais
-    updateChannelListActive();
+    // Atualizar lista de vídeos
+    updateVideoListActive();
+    
+    // Adicionar efeito de mudança de filme
+    addCinemaChangeEffect();
 }
 
-// Criar lista de canais
-function createChannelList() {
-    channelListContainer.innerHTML = '';
+// Criar lista de vídeos
+function createVideoList() {
+    videoListContainer.innerHTML = '';
     
-    channels.forEach((channel, index) => {
-        const channelItem = document.createElement('div');
-        channelItem.className = 'channel-item';
-        if (index === currentChannel) {
-            channelItem.classList.add('active');
+    const filteredVideos = currentFilter === 'all' 
+        ? channels 
+        : channels.filter(video => video.level === currentFilter);
+    
+    filteredVideos.forEach((video, filteredIndex) => {
+        const originalIndex = channels.indexOf(video);
+        
+        const videoItem = document.createElement('div');
+        videoItem.className = 'video-item';
+        videoItem.setAttribute('data-level', video.level);
+        
+        if (originalIndex === currentChannel) {
+            videoItem.classList.add('active');
         }
         
-        const channelNum = document.createElement('span');
-        channelNum.className = 'channel-num';
-        channelNum.textContent = `Aula ${(index + 1).toString().padStart(2, '0')}`;
+        const videoTitle = document.createElement('div');
+        videoTitle.className = 'video-title';
+        videoTitle.textContent = video.name;
         
-        const channelName = document.createElement('span');
-        channelName.textContent = channel.name;
+        const videoDuration = document.createElement('div');
+        videoDuration.className = 'video-duration';
+        videoDuration.innerHTML = `<i class="fas fa-clock"></i> ${video.duration}`;
         
-        channelItem.appendChild(channelNum);
-        channelItem.appendChild(channelName);
+        const videoLevel = document.createElement('div');
+        videoLevel.className = `video-level level-${video.level}`;
+        videoLevel.textContent = video.level.charAt(0).toUpperCase() + video.level.slice(1);
         
-        channelItem.addEventListener('click', () => {
-            changeChannel(index);
+        videoItem.appendChild(videoTitle);
+        videoItem.appendChild(videoDuration);
+        videoItem.appendChild(videoLevel);
+        
+        videoItem.addEventListener('click', () => {
+            changeVideo(originalIndex);
         });
         
-        channelListContainer.appendChild(channelItem);
+        videoListContainer.appendChild(videoItem);
     });
 }
 
-// Atualizar item ativo na lista de canais
-function updateChannelListActive() {
-    const items = document.querySelectorAll('.channel-item');
+// Atualizar item ativo na lista de vídeos
+function updateVideoListActive() {
+    const items = document.querySelectorAll('.video-item');
     items.forEach((item, index) => {
-        if (index === currentChannel) {
+        const originalIndex = channels.findIndex(video => 
+            video.name === item.querySelector('.video-title').textContent
+        );
+        
+        if (originalIndex === currentChannel) {
             item.classList.add('active');
         } else {
             item.classList.remove('active');
@@ -175,46 +153,34 @@ function updateChannelListActive() {
     });
 }
 
-// Mudar canal
-function changeChannel(newChannel) {
-    if (newChannel >= 0 && newChannel < channels.length) {
-        currentChannel = newChannel;
+// Mudar vídeo
+function changeVideo(newVideoIndex) {
+    if (newVideoIndex >= 0 && newVideoIndex < channels.length) {
+        currentChannel = newVideoIndex;
         if (player && player.loadVideoById) {
             player.loadVideoById(channels[currentChannel].id);
         }
-        updateChannelDisplay();
-        
-        // Efeito visual de mudança de canal
-        addChannelChangeEffect();
+        updateVideoDisplay();
     }
 }
 
-// Efeito visual de mudança de canal
-function addChannelChangeEffect() {
-    const screenGlass = document.querySelector('.screen-glass');
-    screenGlass.style.opacity = '0.3';
-    setTimeout(() => {
-        screenGlass.style.opacity = '1';
-    }, 200);
-}
-
-// Canal anterior
-function channelUp() {
-    const newChannel = currentChannel - 1;
-    if (newChannel < 0) {
-        changeChannel(channels.length - 1);
+// Vídeo anterior
+function prevVideo() {
+    const newVideo = currentChannel - 1;
+    if (newVideo < 0) {
+        changeVideo(channels.length - 1);
     } else {
-        changeChannel(newChannel);
+        changeVideo(newVideo);
     }
 }
 
-// Próximo canal
-function channelDown() {
-    const newChannel = currentChannel + 1;
-    if (newChannel >= channels.length) {
-        changeChannel(0);
+// Próximo vídeo
+function nextVideo() {
+    const newVideo = currentChannel + 1;
+    if (newVideo >= channels.length) {
+        changeVideo(0);
     } else {
-        changeChannel(newChannel);
+        changeVideo(newVideo);
     }
 }
 
@@ -256,14 +222,7 @@ function togglePlayPause() {
             player.playVideo();
             isPlaying = true;
         }
-    }
-}
-
-// Parar vídeo
-function stopVideo() {
-    if (player && player.stopVideo) {
-        player.stopVideo();
-        isPlaying = false;
+        updatePlayPauseButton();
     }
 }
 
@@ -281,13 +240,36 @@ function toggleMute() {
     }
 }
 
+// Atualizar botão de play/pause
+function updatePlayPauseButton() {
+    const icon = playPauseBtn.querySelector('i');
+    if (isPlaying) {
+        icon.className = 'fas fa-pause';
+    } else {
+        icon.className = 'fas fa-play';
+    }
+}
+
 // Atualizar botão de mute
 function updateMuteButton() {
-    if (isMuted) {
-        muteBtn.innerHTML = '🔇';
+    const icon = muteBtn.querySelector('i');
+    if (isMuted || currentVolume === 0) {
+        icon.className = 'fas fa-volume-mute';
     } else {
-        muteBtn.innerHTML = '🔊';
+        icon.className = 'fas fa-volume-up';
     }
+}
+
+// Adicionar efeito de mudança de filme
+function addCinemaChangeEffect() {
+    const screenMask = document.querySelector('.screen-mask');
+    screenMask.style.opacity = '0.5';
+    screenMask.style.filter = 'sepia(1)';
+    
+    setTimeout(() => {
+        screenMask.style.opacity = '1';
+        screenMask.style.filter = 'sepia(0)';
+    }, 300);
 }
 
 // Mostrar notificação de volume
@@ -301,94 +283,122 @@ function showVolumeNotification(volume) {
     // Criar nova notificação
     const notification = document.createElement('div');
     notification.className = 'volume-notification';
-    notification.textContent = `Volume: ${volume}%`;
+    notification.innerHTML = `
+        <i class="fas fa-volume-up"></i>
+        Volume: ${volume}%
+    `;
     notification.style.cssText = `
         position: fixed;
-        top: 20px;
-        right: 20px;
-        background: rgba(0, 0, 0, 0.8);
-        color: #00ff00;
-        padding: 15px 25px;
-        border-radius: 10px;
-        font-size: 12px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.9);
+        color: var(--cinema-gold);
+        padding: 20px 30px;
+        border-radius: 15px;
+        font-size: 1.2rem;
+        font-weight: 600;
         z-index: 1000;
-        animation: fadeInOut 2s ease-in-out;
-        border: 2px solid #00ff00;
-        box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        animation: cinemaNotification 1.5s ease-in-out;
+        border: 2px solid var(--cinema-gold);
+        box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
+        display: flex;
+        align-items: center;
+        gap: 10px;
     `;
     
     document.body.appendChild(notification);
     
     setTimeout(() => {
         notification.remove();
-    }, 2000);
+    }, 1500);
 }
 
-// Event Listeners
-channelUpBtn.addEventListener('click', channelUp);
-channelDownBtn.addEventListener('click', channelDown);
-volumeUpBtn.addEventListener('click', volumeUp);
-volumeDownBtn.addEventListener('click', volumeDown);
-playPauseBtn.addEventListener('click', togglePlayPause);
-stopBtn.addEventListener('click', stopVideo);
-muteBtn.addEventListener('click', toggleMute);
+// Filtrar vídeos por nível
+function filterVideos(level) {
+    currentFilter = level;
+    
+    // Atualizar botões ativos
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.remove('active');
+    });
+    
+    event.target.classList.add('active');
+    
+    // Recriar lista de vídeos
+    createVideoList();
+}
 
-// Atalhos de teclado
-document.addEventListener('keydown', (e) => {
-    switch(e.key) {
-        case 'ArrowUp':
-            e.preventDefault();
-            channelUp();
-            break;
-        case 'ArrowDown':
-            e.preventDefault();
-            channelDown();
-            break;
-        case 'ArrowRight':
-            e.preventDefault();
-            volumeUp();
-            break;
-        case 'ArrowLeft':
-            e.preventDefault();
-            volumeDown();
-            break;
-        case ' ':
-            e.preventDefault();
-            togglePlayPause();
-            break;
-        case 'm':
-        case 'M':
-            e.preventDefault();
-            toggleMute();
-            break;
-        case 's':
-        case 'S':
-            e.preventDefault();
-            stopVideo();
-            break;
-    }
-});
+// Configurar event listeners
+function setupEventListeners() {
+    // Botões de controle
+    document.getElementById('prevVideo').addEventListener('click', prevVideo);
+    document.getElementById('nextVideo').addEventListener('click', nextVideo);
+    document.getElementById('volumeDown').addEventListener('click', volumeDown);
+    document.getElementById('volumeUp').addEventListener('click', volumeUp);
+    playPauseBtn.addEventListener('click', togglePlayPause);
+    muteBtn.addEventListener('click', toggleMute);
+    
+    // Filtros
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const filter = e.target.getAttribute('data-filter');
+            filterVideos(filter);
+        });
+    });
+    
+    // Atalhos de teclado
+    document.addEventListener('keydown', (e) => {
+        switch(e.key) {
+            case 'ArrowLeft': // Vídeo anterior
+                e.preventDefault();
+                prevVideo();
+                break;
+            case 'ArrowRight': // Próximo vídeo
+                e.preventDefault();
+                nextVideo();
+                break;
+            case 'ArrowUp': // Aumentar volume
+                e.preventDefault();
+                volumeUp();
+                break;
+            case 'ArrowDown': // Diminuir volume
+                e.preventDefault();
+                volumeDown();
+                break;
+            case ' ': // Play/Pause
+                e.preventDefault();
+                togglePlayPause();
+                break;
+            case 'm':
+            case 'M': // Mudo
+                e.preventDefault();
+                toggleMute();
+                break;
+        }
+    });
+}
 
-// Adicionar CSS para animação de notificação
+// Adicionar CSS para animações
 const style = document.createElement('style');
 style.textContent = `
-    @keyframes fadeInOut {
+    @keyframes cinemaNotification {
         0% {
             opacity: 0;
-            transform: translateY(-20px);
+            transform: translate(-50%, -50%) scale(0.8);
         }
-        20% {
+        50% {
             opacity: 1;
-            transform: translateY(0);
-        }
-        80% {
-            opacity: 1;
-            transform: translateY(0);
+            transform: translate(-50%, -50%) scale(1.05);
         }
         100% {
             opacity: 0;
-            transform: translateY(-20px);
+            transform: translate(-50%, -50%) scale(0.9);
         }
+    }
+    
+    .screen-mask {
+        transition: opacity 0.3s ease, filter 0.3s ease;
     }
 `;
 document.head.appendChild(style);
