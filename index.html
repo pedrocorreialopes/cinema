@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema AI - Curso de Inteligência Artificial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cortinas de Cinema -->
+    <div class="cinema-curtains">
+        <div class="curtain-left"></div>
+        <div class="curtain-right"></div>
+    </div>
+    
+    <!-- Luzes de palco -->
+    <div class="stage-lights">
+        <div class="light light-1"></div>
+        <div class="light light-2"></div>
+        <div class="light light-3"></div>
+        <div class="light light-4"></div>
+    </div>
+    
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Cabeçalho do Cinema -->
+        <header class="cinema-header">
+            <div class="cinema-logo">
+                <i class="fas fa-film"></i>
+                <h1>CINEMA AI</h1>
+                <span>ESTÚDIO DE APRENDIZADO</span>
+            </div>
+            <div class="cinema-marquee">
+                <div class="marquee-text">
+                    🎬 CURSO DE INTELIGÊNCIA ARTIFICIAL - MÓDULO 1 🎬 AGORA EM EXIBIÇÃO 🎬
+                </div>
+            </div>
+        </header>
+
+        <!-- Tela de Cinema -->
+        <div class="cinema-screen">
+            <div class="screen-frame">
+                <div class="screen-mask">
+                    <div id="videoContainer" class="video-container">
+                        <iframe id="youtubePlayer" 
+                                src="https://www.youtube.com/embed/xUarb_lxPUc?enablejsapi=1&playsinline=1" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="film-grain"></div>
+                    <div class="vignette"></div>
+                </div>
+            </div>
+            
+            <!-- Controles de projeção -->
+            <div class="projection-controls">
+                <div class="control-section">
+                    <div class="control-group">
+                        <button class="control-btn" id="prevVideo" title="Vídeo Anterior">
+                            <i class="fas fa-step-backward"></i>
+                        </button>
+                        <button class="control-btn play-btn" id="playPause" title="Play/Pause">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="control-btn" id="nextVideo" title="Próximo Vídeo">
+                            <i class="fas fa-step-forward"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="control-group">
+                        <button class="control-btn" id="volumeDown" title="Diminuir Volume">
+                            <i class="fas fa-volume-down"></i>
+                        </button>
+                        <button class="control-btn" id="mute" title="Mudo">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        <button class="control-btn" id="volumeUp" title="Aumentar Volume">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="video-counter">
+                    <span id="currentVideo">01</span>
+                    <span>/</span>
+                    <span id="totalVideos">14</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Catálogo de Filmes (Vídeos) -->
+        <div class="movie-catalog">
+            <div class="catalog-header">
+                <h2><i class="fas fa-video"></i> CATÁLOGO DE AULAS</h2>
+                <div class="catalog-filter">
+                    <button class="filter-btn active" data-filter="all">Todas</button>
+                    <button class="filter-btn" data-filter="basico">Básico</button>
+                    <button class="filter-btn" data-filter="intermediario">Intermediário</button>
+                    <button class="filter-btn" data-filter="avancado">Avançado</button>
+                </div>
+            </div>
+            <div id="videoListContainer" class="video-grid"></div>
+        </div>
+        
+        <!-- Informações do Cinema -->
+        <div class="cinema-info">
+            <div class="info-card">
+                <i class="fas fa-clock"></i>
+                <div>
+                    <h3>Duração Total</h3>
+                    <p>~3 horas de conteúdo</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-graduation-cap"></i>
+                <div>
+                    <h3>Nível</h3>
+                    <p>Do básico ao avançado</p>
+                </div>
+            </div>
+            <div class="info-card">
+                <i class="fas fa-certificate"></i>
+                <div>
+                    <h3>Certificado</h3>
+                    <p>Ao final do curso</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Rodapé -->
+    <footer class="cinema-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Cinema AI Estúdio - Desenvolvido por Pedro Correia</p>
+            <div class="social-links">
+                <a href="https://pedrocorreialopes.github.io/cursos-on-line" target="_blank" class="social-btn">
+                    <i class="fas fa-graduation-cap"></i>
+                    Ver Todos os Cursos
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
